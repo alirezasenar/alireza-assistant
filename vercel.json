@@ -1,0 +1,14 @@
+{
+  "builds": [
+    {
+      "src": "ask.js",
+      "use": "@vercel/node"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "/ask.js"
+    }
+  ]
+}
